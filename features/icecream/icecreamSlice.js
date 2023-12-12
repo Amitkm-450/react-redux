@@ -4,7 +4,7 @@ const initialState = {
     noOfIcecreams: 20,
 }
 
-const icecreamSlice = createSlice({
+export const icecreamSlice = createSlice({
     name: "icecream",
     initialState,
     reducers: {
@@ -18,5 +18,4 @@ const icecreamSlice = createSlice({
     }
 });
 
-module.exports = icecreamSlice.reducer;
-module.exports.icecreamActions = icecreamSlice.actions;
+export default icecreamSlice.reducer;

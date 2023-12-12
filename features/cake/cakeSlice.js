@@ -3,7 +3,7 @@ import {createSlice} from '@reduxjs/toolkit';
 const initialState = {
     noOfCakes: 10,
 }
-const cakeSlice = createSlice({
+export const cakeSlice = createSlice({
     name: 'cake',
     initialState,
     reducers: {
@@ -27,7 +27,7 @@ const cakeSlice = createSlice({
 })
 
 // console.log(cakeSlice.selectors)
-module.exports = cakeSlice.reducer
-module.exports.cakeAction = cakeSlice.actions;
+export default cakeSlice.reducer
+
 
 

@@ -8,7 +8,7 @@ const initialState = {
     error: ``
 }
 
-const fetchUsers = createAsyncThunk('user/fetchUsers', () => {
+export const fetchUsers = createAsyncThunk('user/fetchUsers', () => {
     return axios
     .get("https://jsonplaceholder.typicode.com/users")
     .then(response => {
@@ -41,5 +41,4 @@ const useSlice = createSlice({
     }
 })
 
-module.exports = useSlice.reducer;
-module.exports.fetchUsers = fetchUsers;
+export default useSlice.reducer;

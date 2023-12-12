@@ -1,4 +1,4 @@
-const createSlice = require('@reduxjs/toolkit').createSlice;
+import {createSlice} from '@reduxjs/toolkit';
 
 const initialState = {
     noOfIcecreams: 20,

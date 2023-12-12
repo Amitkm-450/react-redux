@@ -1,6 +1,5 @@
-const createSlice = require('@reduxjs/toolkit').createSlice;
-const createAsyncThunk = require("@reduxjs/toolkit").createAsyncThunk;
-const axios = require('axios');
+import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
+import axios from 'axios';
 
 
 const initialState = {

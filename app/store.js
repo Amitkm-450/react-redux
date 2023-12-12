@@ -12,7 +12,7 @@ const store = configureStore({
         icecream: icecreamReducer,
         user: userReducer,
     },
-    // middleware: (getDefaultMiddleware) => {
+     // middleware: (getDefaultMiddleware) => {
     //   return  getDefaultMiddleware().concat(logger);
     // }
 });
